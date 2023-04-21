@@ -1,0 +1,673 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>2D Platformer: Класс Character</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">2D Platformer
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#properties">Свойства</a> &#124;
+<a href="#pri-methods">Закрытые члены</a> &#124;
+<a href="#pri-attribs">Закрытые данные</a> &#124;
+<a href="class_character-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс Character</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс, реализующий основную логику играбельного персонажа  
+ <a href="class_character.html#details">Подробнее...</a></p>
+<div class="dynheader">
+Граф наследования:Character:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_character.png" usemap="#Character_map" alt=""/>
+  <map id="Character_map" name="Character_map">
+<area href="class_unit.html" title="Родительский класс для всех &quot;живых&quot; классов - игрока и монстров" alt="Unit" shape="rect" coords="0,56,102,80"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a4c92566bccf29f534c3863eb12fddba2"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_character.html#a4c92566bccf29f534c3863eb12fddba2">ReceiveDamage</a> ()</td></tr>
+<tr class="memdesc:a4c92566bccf29f534c3863eb12fddba2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод, обрабатывающий получение урона  <br /></td></tr>
+<tr class="separator:a4c92566bccf29f534c3863eb12fddba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a698a459fd5eeef7fc906f4657b723fa4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unit.html#a698a459fd5eeef7fc906f4657b723fa4">ReceiveDamage</a> ()</td></tr>
+<tr class="memdesc:a698a459fd5eeef7fc906f4657b723fa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Базовый метод получения урона  <br /></td></tr>
+<tr class="separator:a698a459fd5eeef7fc906f4657b723fa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
+Свойства</h2></td></tr>
+<tr class="memitem:a9aa02060768a4818a7be5439d4b2b34b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_character.html#a9aa02060768a4818a7be5439d4b2b34b">Lives</a><code> [get, set]</code></td></tr>
+<tr class="separator:a9aa02060768a4818a7be5439d4b2b34b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed0be2e250a4ca9639782eb0fac9f728"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_character_8cs.html#a125875a194bc341fa32a233d963ffe02">CharState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_character.html#aed0be2e250a4ca9639782eb0fac9f728">State</a><code> [get, set]</code></td></tr>
+<tr class="separator:aed0be2e250a4ca9639782eb0fac9f728"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Закрытые члены</h2></td></tr>
+<tr class="memitem:a4b94b509f20b3916112479cdfdcbcd01"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_character.html#a4b94b509f20b3916112479cdfdcbcd01">Awake</a> ()</td></tr>
+<tr class="memdesc:a4b94b509f20b3916112479cdfdcbcd01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод, вызывающийся при загрузке объекта Подгружает необходимые компоненты  <br /></td></tr>
+<tr class="separator:a4b94b509f20b3916112479cdfdcbcd01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66c37c827fdcef0189c80dd16346aa49"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_character.html#a66c37c827fdcef0189c80dd16346aa49">FixedUpdate</a> ()</td></tr>
+<tr class="memdesc:a66c37c827fdcef0189c80dd16346aa49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод, вызывающийся каждый фиксированный прометжуток времени Внутри вызывается проверка на нахождение персонажа на земле  <br /></td></tr>
+<tr class="separator:a66c37c827fdcef0189c80dd16346aa49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aece0668e7a77644608b3ad2c971c4744"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_character.html#aece0668e7a77644608b3ad2c971c4744">Update</a> ()</td></tr>
+<tr class="memdesc:aece0668e7a77644608b3ad2c971c4744"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод, вызывающийся каждый кадр Внутри обрабатывается нажатие клавиш и проверка состяния нахождения на земле  <br /></td></tr>
+<tr class="separator:aece0668e7a77644608b3ad2c971c4744"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4e6ba5aa14b2b517086ccd7a3199734"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_character.html#ac4e6ba5aa14b2b517086ccd7a3199734">Run</a> ()</td></tr>
+<tr class="memdesc:ac4e6ba5aa14b2b517086ccd7a3199734"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод для перемещения персонажа по горизонтали  <br /></td></tr>
+<tr class="separator:ac4e6ba5aa14b2b517086ccd7a3199734"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc5753f4605053d011d30405ab4e3ea4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_character.html#abc5753f4605053d011d30405ab4e3ea4">Jump</a> ()</td></tr>
+<tr class="memdesc:abc5753f4605053d011d30405ab4e3ea4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод для совершения прыжка  <br /></td></tr>
+<tr class="separator:abc5753f4605053d011d30405ab4e3ea4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a360a47139079d1b64035d9372cab54a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_character.html#a360a47139079d1b64035d9372cab54a8">Shoot</a> ()</td></tr>
+<tr class="memdesc:a360a47139079d1b64035d9372cab54a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод для выстрела  <br /></td></tr>
+<tr class="separator:a360a47139079d1b64035d9372cab54a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2548518d7396875afad32cfc65c938f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_character.html#a2548518d7396875afad32cfc65c938f9">CheckGround</a> ()</td></tr>
+<tr class="memdesc:a2548518d7396875afad32cfc65c938f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод проверяет находится ли персонаж на земле и меняет соответствующие поля  <br /></td></tr>
+<tr class="separator:a2548518d7396875afad32cfc65c938f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58762e8c85a672a88ee9a6d4ea96d01f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_character.html#a58762e8c85a672a88ee9a6d4ea96d01f">OnTriggerEnter2D</a> (Collider2D collider)</td></tr>
+<tr class="memdesc:a58762e8c85a672a88ee9a6d4ea96d01f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод вызывающийся при столкновении с другим коллайдером Проверяет попадание пули и получает урон если пуля попала  <br /></td></tr>
+<tr class="separator:a58762e8c85a672a88ee9a6d4ea96d01f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:a58c547e42b5206667cad119795204b2e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_character.html#a58c547e42b5206667cad119795204b2e">lives</a> = 5</td></tr>
+<tr class="separator:a58c547e42b5206667cad119795204b2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a6ec2efe1cf100ea52d73e0e3e4fbf1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_lives_bar.html">LivesBar</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_character.html#a1a6ec2efe1cf100ea52d73e0e3e4fbf1">livesBar</a></td></tr>
+<tr class="separator:a1a6ec2efe1cf100ea52d73e0e3e4fbf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34ba4bab0f4e03bc819698826f483572"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_character.html#a34ba4bab0f4e03bc819698826f483572">speed</a> = 3.0F</td></tr>
+<tr class="separator:a34ba4bab0f4e03bc819698826f483572"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af72b368bb3315c7d67c90f112aad2a28"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_character.html#af72b368bb3315c7d67c90f112aad2a28">jumpForce</a> = 15.0F</td></tr>
+<tr class="separator:af72b368bb3315c7d67c90f112aad2a28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f0053477140ca5c24e32317d7f8a273"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_character.html#a7f0053477140ca5c24e32317d7f8a273">isGrounded</a> = false</td></tr>
+<tr class="separator:a7f0053477140ca5c24e32317d7f8a273"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a509049b76f4a1b8e7875bf3530895b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_bullet.html">Bullet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_character.html#a7a509049b76f4a1b8e7875bf3530895b">bullet</a></td></tr>
+<tr class="separator:a7a509049b76f4a1b8e7875bf3530895b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab58e73f8c704b4053b871c7506882845"><td class="memItemLeft" align="right" valign="top">new Rigidbody2D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_character.html#ab58e73f8c704b4053b871c7506882845">rigidbody</a></td></tr>
+<tr class="separator:ab58e73f8c704b4053b871c7506882845"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bf31025cd629278a4577e749e42d296"><td class="memItemLeft" align="right" valign="top">Animator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_character.html#a1bf31025cd629278a4577e749e42d296">animator</a></td></tr>
+<tr class="separator:a1bf31025cd629278a4577e749e42d296"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54c12ccaed6171b7c5746fc44015531a"><td class="memItemLeft" align="right" valign="top">SpriteRenderer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_character.html#a54c12ccaed6171b7c5746fc44015531a">sprite</a></td></tr>
+<tr class="separator:a54c12ccaed6171b7c5746fc44015531a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Дополнительные унаследованные члены</h2></td></tr>
+<tr class="inherit_header pro_methods_class_unit"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_unit')"><img src="closed.png" alt="-"/>&#160;Защищенные члены унаследованные от <a class="el" href="class_unit.html">Unit</a></td></tr>
+<tr class="memitem:af3d22541d2829f0de065bf6aecee9957 inherit pro_methods_class_unit"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unit.html#af3d22541d2829f0de065bf6aecee9957">Die</a> ()</td></tr>
+<tr class="memdesc:af3d22541d2829f0de065bf6aecee9957 inherit pro_methods_class_unit"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод вызываемый при смерти объекта  <br /></td></tr>
+<tr class="separator:af3d22541d2829f0de065bf6aecee9957 inherit pro_methods_class_unit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс, реализующий основную логику играбельного персонажа </p>
+</div><h2 class="groupheader">Методы</h2>
+<a id="a4b94b509f20b3916112479cdfdcbcd01" name="a4b94b509f20b3916112479cdfdcbcd01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b94b509f20b3916112479cdfdcbcd01">&#9670;&#160;</a></span>Awake()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Character.Awake </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Метод, вызывающийся при загрузке объекта Подгружает необходимые компоненты </p>
+
+</div>
+</div>
+<a id="a2548518d7396875afad32cfc65c938f9" name="a2548518d7396875afad32cfc65c938f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2548518d7396875afad32cfc65c938f9">&#9670;&#160;</a></span>CheckGround()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Character.CheckGround </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Метод проверяет находится ли персонаж на земле и меняет соответствующие поля </p>
+
+</div>
+</div>
+<a id="a66c37c827fdcef0189c80dd16346aa49" name="a66c37c827fdcef0189c80dd16346aa49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66c37c827fdcef0189c80dd16346aa49">&#9670;&#160;</a></span>FixedUpdate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Character.FixedUpdate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Метод, вызывающийся каждый фиксированный прометжуток времени Внутри вызывается проверка на нахождение персонажа на земле </p>
+
+</div>
+</div>
+<a id="abc5753f4605053d011d30405ab4e3ea4" name="abc5753f4605053d011d30405ab4e3ea4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc5753f4605053d011d30405ab4e3ea4">&#9670;&#160;</a></span>Jump()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Character.Jump </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Метод для совершения прыжка </p>
+
+</div>
+</div>
+<a id="a58762e8c85a672a88ee9a6d4ea96d01f" name="a58762e8c85a672a88ee9a6d4ea96d01f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58762e8c85a672a88ee9a6d4ea96d01f">&#9670;&#160;</a></span>OnTriggerEnter2D()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Character.OnTriggerEnter2D </td>
+          <td>(</td>
+          <td class="paramtype">Collider2D&#160;</td>
+          <td class="paramname"><em>collider</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Метод вызывающийся при столкновении с другим коллайдером Проверяет попадание пули и получает урон если пуля попала </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">collider</td><td>- объект коллайдера, с которым произошло столкновение </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4c92566bccf29f534c3863eb12fddba2" name="a4c92566bccf29f534c3863eb12fddba2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c92566bccf29f534c3863eb12fddba2">&#9670;&#160;</a></span>ReceiveDamage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void Character.ReceiveDamage </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Метод, обрабатывающий получение урона </p>
+
+<p>Переопределяет метод предка <a class="el" href="class_unit.html#a698a459fd5eeef7fc906f4657b723fa4">Unit</a>.</p>
+
+</div>
+</div>
+<a id="ac4e6ba5aa14b2b517086ccd7a3199734" name="ac4e6ba5aa14b2b517086ccd7a3199734"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4e6ba5aa14b2b517086ccd7a3199734">&#9670;&#160;</a></span>Run()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Character.Run </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Метод для перемещения персонажа по горизонтали </p>
+
+</div>
+</div>
+<a id="a360a47139079d1b64035d9372cab54a8" name="a360a47139079d1b64035d9372cab54a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a360a47139079d1b64035d9372cab54a8">&#9670;&#160;</a></span>Shoot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Character.Shoot </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Метод для выстрела </p>
+
+</div>
+</div>
+<a id="aece0668e7a77644608b3ad2c971c4744" name="aece0668e7a77644608b3ad2c971c4744"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aece0668e7a77644608b3ad2c971c4744">&#9670;&#160;</a></span>Update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Character.Update </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Метод, вызывающийся каждый кадр Внутри обрабатывается нажатие клавиш и проверка состяния нахождения на земле </p>
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a id="a1bf31025cd629278a4577e749e42d296" name="a1bf31025cd629278a4577e749e42d296"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1bf31025cd629278a4577e749e42d296">&#9670;&#160;</a></span>animator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Animator Character.animator</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7a509049b76f4a1b8e7875bf3530895b" name="a7a509049b76f4a1b8e7875bf3530895b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a509049b76f4a1b8e7875bf3530895b">&#9670;&#160;</a></span>bullet</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_bullet.html">Bullet</a> Character.bullet</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7f0053477140ca5c24e32317d7f8a273" name="a7f0053477140ca5c24e32317d7f8a273"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f0053477140ca5c24e32317d7f8a273">&#9670;&#160;</a></span>isGrounded</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Character.isGrounded = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af72b368bb3315c7d67c90f112aad2a28" name="af72b368bb3315c7d67c90f112aad2a28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af72b368bb3315c7d67c90f112aad2a28">&#9670;&#160;</a></span>jumpForce</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Character.jumpForce = 15.0F</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a58c547e42b5206667cad119795204b2e" name="a58c547e42b5206667cad119795204b2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58c547e42b5206667cad119795204b2e">&#9670;&#160;</a></span>lives</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Character.lives = 5</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1a6ec2efe1cf100ea52d73e0e3e4fbf1" name="a1a6ec2efe1cf100ea52d73e0e3e4fbf1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a6ec2efe1cf100ea52d73e0e3e4fbf1">&#9670;&#160;</a></span>livesBar</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_lives_bar.html">LivesBar</a> Character.livesBar</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab58e73f8c704b4053b871c7506882845" name="ab58e73f8c704b4053b871c7506882845"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab58e73f8c704b4053b871c7506882845">&#9670;&#160;</a></span>rigidbody</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">new Rigidbody2D Character.rigidbody</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a34ba4bab0f4e03bc819698826f483572" name="a34ba4bab0f4e03bc819698826f483572"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34ba4bab0f4e03bc819698826f483572">&#9670;&#160;</a></span>speed</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Character.speed = 3.0F</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a54c12ccaed6171b7c5746fc44015531a" name="a54c12ccaed6171b7c5746fc44015531a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54c12ccaed6171b7c5746fc44015531a">&#9670;&#160;</a></span>sprite</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SpriteRenderer Character.sprite</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Полный список свойств</h2>
+<a id="a9aa02060768a4818a7be5439d4b2b34b" name="a9aa02060768a4818a7be5439d4b2b34b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9aa02060768a4818a7be5439d4b2b34b">&#9670;&#160;</a></span>Lives</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Character.Lives</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aed0be2e250a4ca9639782eb0fac9f728" name="aed0be2e250a4ca9639782eb0fac9f728"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed0be2e250a4ca9639782eb0fac9f728">&#9670;&#160;</a></span>State</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_character_8cs.html#a125875a194bc341fa32a233d963ffe02">CharState</a> Character.State</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>D:/BY3/2DPlatformer/Assets/Scripts/<a class="el" href="_character_8cs.html">Character.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
+</body>
+</html>

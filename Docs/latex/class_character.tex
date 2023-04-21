@@ -1,0 +1,257 @@
+\hypertarget{class_character}{}\doxysection{Класс Character}
+\label{class_character}\index{Character@{Character}}
+
+
+Класс, реализующий основную логику играбельного персонажа  
+
+
+Граф наследования\+:Character\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_character}
+\end{center}
+\end{figure}
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_character_a4c92566bccf29f534c3863eb12fddba2}{Receive\+Damage}} ()
+\begin{DoxyCompactList}\small\item\em Метод, обрабатывающий получение урона \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_unit_a698a459fd5eeef7fc906f4657b723fa4}{Receive\+Damage}} ()
+\begin{DoxyCompactList}\small\item\em Базовый метод получения урона \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Свойства}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_character_a9aa02060768a4818a7be5439d4b2b34b}{Lives}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{_character_8cs_a125875a194bc341fa32a233d963ffe02}{Char\+State}} \mbox{\hyperlink{class_character_aed0be2e250a4ca9639782eb0fac9f728}{State}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые члены}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_character_a4b94b509f20b3916112479cdfdcbcd01}{Awake}} ()
+\begin{DoxyCompactList}\small\item\em Метод, вызывающийся при загрузке объекта Подгружает необходимые компоненты \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_character_a66c37c827fdcef0189c80dd16346aa49}{Fixed\+Update}} ()
+\begin{DoxyCompactList}\small\item\em Метод, вызывающийся каждый фиксированный прометжуток времени Внутри вызывается проверка на нахождение персонажа на земле \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_character_aece0668e7a77644608b3ad2c971c4744}{Update}} ()
+\begin{DoxyCompactList}\small\item\em Метод, вызывающийся каждый кадр Внутри обрабатывается нажатие клавиш и проверка состяния нахождения на земле \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_character_ac4e6ba5aa14b2b517086ccd7a3199734}{Run}} ()
+\begin{DoxyCompactList}\small\item\em Метод для перемещения персонажа по горизонтали \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_character_abc5753f4605053d011d30405ab4e3ea4}{Jump}} ()
+\begin{DoxyCompactList}\small\item\em Метод для совершения прыжка \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_character_a360a47139079d1b64035d9372cab54a8}{Shoot}} ()
+\begin{DoxyCompactList}\small\item\em Метод для выстрела \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_character_a2548518d7396875afad32cfc65c938f9}{Check\+Ground}} ()
+\begin{DoxyCompactList}\small\item\em Метод проверяет находится ли персонаж на земле и меняет соответствующие поля \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_character_a58762e8c85a672a88ee9a6d4ea96d01f}{On\+Trigger\+Enter2D}} (Collider2D collider)
+\begin{DoxyCompactList}\small\item\em Метод вызывающийся при столкновении с другим коллайдером Проверяет попадание пули и получает урон если пуля попала \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_character_a58c547e42b5206667cad119795204b2e}{lives}} = 5
+\item 
+\mbox{\hyperlink{class_lives_bar}{Lives\+Bar}} \mbox{\hyperlink{class_character_a1a6ec2efe1cf100ea52d73e0e3e4fbf1}{lives\+Bar}}
+\item 
+float \mbox{\hyperlink{class_character_a34ba4bab0f4e03bc819698826f483572}{speed}} = 3.\+0F
+\item 
+float \mbox{\hyperlink{class_character_af72b368bb3315c7d67c90f112aad2a28}{jump\+Force}} = 15.\+0F
+\item 
+bool \mbox{\hyperlink{class_character_a7f0053477140ca5c24e32317d7f8a273}{is\+Grounded}} = false
+\item 
+\mbox{\hyperlink{class_bullet}{Bullet}} \mbox{\hyperlink{class_character_a7a509049b76f4a1b8e7875bf3530895b}{bullet}}
+\item 
+new Rigidbody2D \mbox{\hyperlink{class_character_ab58e73f8c704b4053b871c7506882845}{rigidbody}}
+\item 
+Animator \mbox{\hyperlink{class_character_a1bf31025cd629278a4577e749e42d296}{animator}}
+\item 
+Sprite\+Renderer \mbox{\hyperlink{class_character_a54c12ccaed6171b7c5746fc44015531a}{sprite}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Дополнительные унаследованные члены}
+\doxysubsubsection*{Защищенные члены унаследованные от \mbox{\hyperlink{class_unit}{Unit}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_unit_af3d22541d2829f0de065bf6aecee9957}{Die}} ()
+\begin{DoxyCompactList}\small\item\em Метод вызываемый при смерти объекта \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс, реализующий основную логику играбельного персонажа 
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{class_character_a4b94b509f20b3916112479cdfdcbcd01}\label{class_character_a4b94b509f20b3916112479cdfdcbcd01}} 
+\index{Character@{Character}!Awake@{Awake}}
+\index{Awake@{Awake}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily void Character.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Метод, вызывающийся при загрузке объекта Подгружает необходимые компоненты 
+
+\mbox{\Hypertarget{class_character_a2548518d7396875afad32cfc65c938f9}\label{class_character_a2548518d7396875afad32cfc65c938f9}} 
+\index{Character@{Character}!CheckGround@{CheckGround}}
+\index{CheckGround@{CheckGround}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{CheckGround()}{CheckGround()}}
+{\footnotesize\ttfamily void Character.\+Check\+Ground (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Метод проверяет находится ли персонаж на земле и меняет соответствующие поля 
+
+\mbox{\Hypertarget{class_character_a66c37c827fdcef0189c80dd16346aa49}\label{class_character_a66c37c827fdcef0189c80dd16346aa49}} 
+\index{Character@{Character}!FixedUpdate@{FixedUpdate}}
+\index{FixedUpdate@{FixedUpdate}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{FixedUpdate()}{FixedUpdate()}}
+{\footnotesize\ttfamily void Character.\+Fixed\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Метод, вызывающийся каждый фиксированный прометжуток времени Внутри вызывается проверка на нахождение персонажа на земле 
+
+\mbox{\Hypertarget{class_character_abc5753f4605053d011d30405ab4e3ea4}\label{class_character_abc5753f4605053d011d30405ab4e3ea4}} 
+\index{Character@{Character}!Jump@{Jump}}
+\index{Jump@{Jump}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{Jump()}{Jump()}}
+{\footnotesize\ttfamily void Character.\+Jump (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Метод для совершения прыжка 
+
+\mbox{\Hypertarget{class_character_a58762e8c85a672a88ee9a6d4ea96d01f}\label{class_character_a58762e8c85a672a88ee9a6d4ea96d01f}} 
+\index{Character@{Character}!OnTriggerEnter2D@{OnTriggerEnter2D}}
+\index{OnTriggerEnter2D@{OnTriggerEnter2D}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{OnTriggerEnter2D()}{OnTriggerEnter2D()}}
+{\footnotesize\ttfamily void Character.\+On\+Trigger\+Enter2D (\begin{DoxyParamCaption}\item[{Collider2D}]{collider }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Метод вызывающийся при столкновении с другим коллайдером Проверяет попадание пули и получает урон если пуля попала 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em collider} & -\/ объект коллайдера, с которым произошло столкновение \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_character_a4c92566bccf29f534c3863eb12fddba2}\label{class_character_a4c92566bccf29f534c3863eb12fddba2}} 
+\index{Character@{Character}!ReceiveDamage@{ReceiveDamage}}
+\index{ReceiveDamage@{ReceiveDamage}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{ReceiveDamage()}{ReceiveDamage()}}
+{\footnotesize\ttfamily override void Character.\+Receive\+Damage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Метод, обрабатывающий получение урона 
+
+
+
+Переопределяет метод предка \mbox{\hyperlink{class_unit_a698a459fd5eeef7fc906f4657b723fa4}{Unit}}.
+
+\mbox{\Hypertarget{class_character_ac4e6ba5aa14b2b517086ccd7a3199734}\label{class_character_ac4e6ba5aa14b2b517086ccd7a3199734}} 
+\index{Character@{Character}!Run@{Run}}
+\index{Run@{Run}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{Run()}{Run()}}
+{\footnotesize\ttfamily void Character.\+Run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Метод для перемещения персонажа по горизонтали 
+
+\mbox{\Hypertarget{class_character_a360a47139079d1b64035d9372cab54a8}\label{class_character_a360a47139079d1b64035d9372cab54a8}} 
+\index{Character@{Character}!Shoot@{Shoot}}
+\index{Shoot@{Shoot}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{Shoot()}{Shoot()}}
+{\footnotesize\ttfamily void Character.\+Shoot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Метод для выстрела 
+
+\mbox{\Hypertarget{class_character_aece0668e7a77644608b3ad2c971c4744}\label{class_character_aece0668e7a77644608b3ad2c971c4744}} 
+\index{Character@{Character}!Update@{Update}}
+\index{Update@{Update}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Character.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Метод, вызывающийся каждый кадр Внутри обрабатывается нажатие клавиш и проверка состяния нахождения на земле 
+
+
+
+\doxysubsection{Данные класса}
+\mbox{\Hypertarget{class_character_a1bf31025cd629278a4577e749e42d296}\label{class_character_a1bf31025cd629278a4577e749e42d296}} 
+\index{Character@{Character}!animator@{animator}}
+\index{animator@{animator}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{animator}{animator}}
+{\footnotesize\ttfamily Animator Character.\+animator\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_character_a7a509049b76f4a1b8e7875bf3530895b}\label{class_character_a7a509049b76f4a1b8e7875bf3530895b}} 
+\index{Character@{Character}!bullet@{bullet}}
+\index{bullet@{bullet}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{bullet}{bullet}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_bullet}{Bullet}} Character.\+bullet\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_character_a7f0053477140ca5c24e32317d7f8a273}\label{class_character_a7f0053477140ca5c24e32317d7f8a273}} 
+\index{Character@{Character}!isGrounded@{isGrounded}}
+\index{isGrounded@{isGrounded}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{isGrounded}{isGrounded}}
+{\footnotesize\ttfamily bool Character.\+is\+Grounded = false\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_character_af72b368bb3315c7d67c90f112aad2a28}\label{class_character_af72b368bb3315c7d67c90f112aad2a28}} 
+\index{Character@{Character}!jumpForce@{jumpForce}}
+\index{jumpForce@{jumpForce}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{jumpForce}{jumpForce}}
+{\footnotesize\ttfamily float Character.\+jump\+Force = 15.\+0F\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_character_a58c547e42b5206667cad119795204b2e}\label{class_character_a58c547e42b5206667cad119795204b2e}} 
+\index{Character@{Character}!lives@{lives}}
+\index{lives@{lives}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{lives}{lives}}
+{\footnotesize\ttfamily int Character.\+lives = 5\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_character_a1a6ec2efe1cf100ea52d73e0e3e4fbf1}\label{class_character_a1a6ec2efe1cf100ea52d73e0e3e4fbf1}} 
+\index{Character@{Character}!livesBar@{livesBar}}
+\index{livesBar@{livesBar}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{livesBar}{livesBar}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lives_bar}{Lives\+Bar}} Character.\+lives\+Bar\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_character_ab58e73f8c704b4053b871c7506882845}\label{class_character_ab58e73f8c704b4053b871c7506882845}} 
+\index{Character@{Character}!rigidbody@{rigidbody}}
+\index{rigidbody@{rigidbody}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{rigidbody}{rigidbody}}
+{\footnotesize\ttfamily new Rigidbody2D Character.\+rigidbody\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_character_a34ba4bab0f4e03bc819698826f483572}\label{class_character_a34ba4bab0f4e03bc819698826f483572}} 
+\index{Character@{Character}!speed@{speed}}
+\index{speed@{speed}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{speed}{speed}}
+{\footnotesize\ttfamily float Character.\+speed = 3.\+0F\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_character_a54c12ccaed6171b7c5746fc44015531a}\label{class_character_a54c12ccaed6171b7c5746fc44015531a}} 
+\index{Character@{Character}!sprite@{sprite}}
+\index{sprite@{sprite}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{sprite}{sprite}}
+{\footnotesize\ttfamily Sprite\+Renderer Character.\+sprite\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Полный список свойств}
+\mbox{\Hypertarget{class_character_a9aa02060768a4818a7be5439d4b2b34b}\label{class_character_a9aa02060768a4818a7be5439d4b2b34b}} 
+\index{Character@{Character}!Lives@{Lives}}
+\index{Lives@{Lives}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{Lives}{Lives}}
+{\footnotesize\ttfamily int Character.\+Lives\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_character_aed0be2e250a4ca9639782eb0fac9f728}\label{class_character_aed0be2e250a4ca9639782eb0fac9f728}} 
+\index{Character@{Character}!State@{State}}
+\index{State@{State}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{State}{State}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_character_8cs_a125875a194bc341fa32a233d963ffe02}{Char\+State}} Character.\+State\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}, {\ttfamily [private]}}
+
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+BY3/2\+DPlatformer/\+Assets/\+Scripts/\mbox{\hyperlink{_character_8cs}{Character.\+cs}}\end{DoxyCompactItemize}

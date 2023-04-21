@@ -1,0 +1,148 @@
+\hypertarget{class_bullet}{}\doxysection{Класс Bullet}
+\label{class_bullet}\index{Bullet@{Bullet}}
+
+
+Класс пули (снаряда)  
+
+
+Граф наследования\+:Bullet\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_bullet}
+\end{center}
+\end{figure}
+\doxysubsection*{Свойства}
+\begin{DoxyCompactItemize}
+\item 
+Game\+Object \mbox{\hyperlink{class_bullet_ac42f67adee20458b6c1d1e3a50c37324}{Parent}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Vector3 \mbox{\hyperlink{class_bullet_a5c72494550e4c1b0afc815a3a10679d9}{Direction}}\hspace{0.3cm}{\ttfamily  \mbox{[}set\mbox{]}}
+\item 
+Color \mbox{\hyperlink{class_bullet_a11c93a49641814a887a9275cf5f927b2}{Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые члены}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_bullet_aba2e607127c4181f527f792f8995a367}{Awake}} ()
+\begin{DoxyCompactList}\small\item\em Метод, вызывающийся при загрузке объекта Подгружает необходимые компоненты \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bullet_a4862c6392cf36c5c20f2ace5b1d8d484}{Start}} ()
+\begin{DoxyCompactList}\small\item\em Метод, вызывающийся сразу после загрузки объекта Ставит таймер в 1.\+5 секунды на уничтожение этой пули \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bullet_ac6941e4e535a484e4b3a86b993633572}{Update}} ()
+\begin{DoxyCompactList}\small\item\em Метод, вызываемый каждый кадр Перемещает пулю в сторону полета \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bullet_ad042ace2c5b325fde0ef2266c8a072ca}{On\+Trigger\+Enter2D}} (Collider2D collider)
+\begin{DoxyCompactList}\small\item\em Метод вызывающийся при столкновении с другим коллайдером Проверяет попадание пули в другой объект, уничтожая его если попадание есть \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+Game\+Object \mbox{\hyperlink{class_bullet_ab03f47c96603a793d98828cce9d0a2c1}{parent}}
+\item 
+float \mbox{\hyperlink{class_bullet_a75e914c39a4154ced3d653ae44a05539}{speed}} = 10.\+0F
+\item 
+Vector3 \mbox{\hyperlink{class_bullet_a3e2c779af8ba4b97394b3ae4be1404b5}{direction}}
+\item 
+Sprite\+Renderer \mbox{\hyperlink{class_bullet_a989fd128504ca463e5df604deef076ba}{sprite}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс пули (снаряда) 
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{class_bullet_aba2e607127c4181f527f792f8995a367}\label{class_bullet_aba2e607127c4181f527f792f8995a367}} 
+\index{Bullet@{Bullet}!Awake@{Awake}}
+\index{Awake@{Awake}!Bullet@{Bullet}}
+\doxysubsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily void Bullet.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Метод, вызывающийся при загрузке объекта Подгружает необходимые компоненты 
+
+\mbox{\Hypertarget{class_bullet_ad042ace2c5b325fde0ef2266c8a072ca}\label{class_bullet_ad042ace2c5b325fde0ef2266c8a072ca}} 
+\index{Bullet@{Bullet}!OnTriggerEnter2D@{OnTriggerEnter2D}}
+\index{OnTriggerEnter2D@{OnTriggerEnter2D}!Bullet@{Bullet}}
+\doxysubsubsection{\texorpdfstring{OnTriggerEnter2D()}{OnTriggerEnter2D()}}
+{\footnotesize\ttfamily void Bullet.\+On\+Trigger\+Enter2D (\begin{DoxyParamCaption}\item[{Collider2D}]{collider }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Метод вызывающийся при столкновении с другим коллайдером Проверяет попадание пули в другой объект, уничтожая его если попадание есть 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em collider} & -\/ объект коллайдера, с которым произошло столкновение \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_bullet_a4862c6392cf36c5c20f2ace5b1d8d484}\label{class_bullet_a4862c6392cf36c5c20f2ace5b1d8d484}} 
+\index{Bullet@{Bullet}!Start@{Start}}
+\index{Start@{Start}!Bullet@{Bullet}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Bullet.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Метод, вызывающийся сразу после загрузки объекта Ставит таймер в 1.\+5 секунды на уничтожение этой пули 
+
+\mbox{\Hypertarget{class_bullet_ac6941e4e535a484e4b3a86b993633572}\label{class_bullet_ac6941e4e535a484e4b3a86b993633572}} 
+\index{Bullet@{Bullet}!Update@{Update}}
+\index{Update@{Update}!Bullet@{Bullet}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Bullet.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Метод, вызываемый каждый кадр Перемещает пулю в сторону полета 
+
+
+
+\doxysubsection{Данные класса}
+\mbox{\Hypertarget{class_bullet_a3e2c779af8ba4b97394b3ae4be1404b5}\label{class_bullet_a3e2c779af8ba4b97394b3ae4be1404b5}} 
+\index{Bullet@{Bullet}!direction@{direction}}
+\index{direction@{direction}!Bullet@{Bullet}}
+\doxysubsubsection{\texorpdfstring{direction}{direction}}
+{\footnotesize\ttfamily Vector3 Bullet.\+direction\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_bullet_ab03f47c96603a793d98828cce9d0a2c1}\label{class_bullet_ab03f47c96603a793d98828cce9d0a2c1}} 
+\index{Bullet@{Bullet}!parent@{parent}}
+\index{parent@{parent}!Bullet@{Bullet}}
+\doxysubsubsection{\texorpdfstring{parent}{parent}}
+{\footnotesize\ttfamily Game\+Object Bullet.\+parent\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_bullet_a75e914c39a4154ced3d653ae44a05539}\label{class_bullet_a75e914c39a4154ced3d653ae44a05539}} 
+\index{Bullet@{Bullet}!speed@{speed}}
+\index{speed@{speed}!Bullet@{Bullet}}
+\doxysubsubsection{\texorpdfstring{speed}{speed}}
+{\footnotesize\ttfamily float Bullet.\+speed = 10.\+0F\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_bullet_a989fd128504ca463e5df604deef076ba}\label{class_bullet_a989fd128504ca463e5df604deef076ba}} 
+\index{Bullet@{Bullet}!sprite@{sprite}}
+\index{sprite@{sprite}!Bullet@{Bullet}}
+\doxysubsubsection{\texorpdfstring{sprite}{sprite}}
+{\footnotesize\ttfamily Sprite\+Renderer Bullet.\+sprite\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Полный список свойств}
+\mbox{\Hypertarget{class_bullet_a11c93a49641814a887a9275cf5f927b2}\label{class_bullet_a11c93a49641814a887a9275cf5f927b2}} 
+\index{Bullet@{Bullet}!Color@{Color}}
+\index{Color@{Color}!Bullet@{Bullet}}
+\doxysubsubsection{\texorpdfstring{Color}{Color}}
+{\footnotesize\ttfamily Color Bullet.\+Color\hspace{0.3cm}{\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_bullet_a5c72494550e4c1b0afc815a3a10679d9}\label{class_bullet_a5c72494550e4c1b0afc815a3a10679d9}} 
+\index{Bullet@{Bullet}!Direction@{Direction}}
+\index{Direction@{Direction}!Bullet@{Bullet}}
+\doxysubsubsection{\texorpdfstring{Direction}{Direction}}
+{\footnotesize\ttfamily Vector3 Bullet.\+Direction\hspace{0.3cm}{\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_bullet_ac42f67adee20458b6c1d1e3a50c37324}\label{class_bullet_ac42f67adee20458b6c1d1e3a50c37324}} 
+\index{Bullet@{Bullet}!Parent@{Parent}}
+\index{Parent@{Parent}!Bullet@{Bullet}}
+\doxysubsubsection{\texorpdfstring{Parent}{Parent}}
+{\footnotesize\ttfamily Game\+Object Bullet.\+Parent\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+BY3/2\+DPlatformer/\+Assets/\+Scripts/\mbox{\hyperlink{_bullet_8cs}{Bullet.\+cs}}\end{DoxyCompactItemize}

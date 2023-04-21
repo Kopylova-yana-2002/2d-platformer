@@ -3,7 +3,7 @@ using System.Collections;
 using System.Linq;
 
 /**
- * Класс движущегося монстра
+ * @brief Класс движущегося монстра
  */
 public class MoveableMonster : Monster
 {
@@ -16,7 +16,7 @@ public class MoveableMonster : Monster
     private SpriteRenderer sprite;
 
     /**
-     * Метод, вызывающийся при загрузке объекта
+     * @brief Метод, вызывающийся при загрузке объекта
      * Подгружает необходимые компоненты
      */
     protected void Awake()
@@ -25,7 +25,7 @@ public class MoveableMonster : Monster
     }
 
     /**
-     * Метод, вызывающийся после загрузки объекта
+     * @brief Метод, вызывающийся после загрузки объекта
      * Запоминает направление движения
      */
     protected void Start()
@@ -34,7 +34,7 @@ public class MoveableMonster : Monster
     }
 
     /**
-     * Метод, вызывающийся в каждом кадре
+     * @brief Метод, вызывающийся в каждом кадре
      * Передвигает монстра
      */
     protected void Update()
@@ -43,7 +43,7 @@ public class MoveableMonster : Monster
     }
 
     /**
-     * Метод вызывающийся при столкновении с другим коллайдером
+     * @brief Метод вызывающийся при столкновении с другим коллайдером
      * Проверяет столкновение с игроком
      * Если игрок прыгнул сверху -> монстр получает урон
      * Если игрок столкнулся иначе -> игрок получает урон
@@ -61,7 +61,7 @@ public class MoveableMonster : Monster
     }
 
     /**
-     * Метод для передвижения монстра
+     * @brief Метод для передвижения монстра
      * Меняет направление движения если монстр дошел до стены
      */
     private void Move()

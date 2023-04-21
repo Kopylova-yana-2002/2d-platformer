@@ -2,7 +2,7 @@
 using System.Collections;
 
 /**
- * Класс описывающий полоску жизней игрока
+ * @brief Класс описывающий полоску жизней игрока
  */
 public class LivesBar : MonoBehaviour
 {
@@ -11,7 +11,7 @@ public class LivesBar : MonoBehaviour
     private Character character;
 
     /**
-     * Метод, вызывающийся при загрузке объекта
+     * @brief Метод, вызывающийся при загрузке объекта
      * Подгружает необходимые компоненты
      */
     private void Awake()
@@ -25,7 +25,7 @@ public class LivesBar : MonoBehaviour
         }
     }
     /**
-     * Метод для обновления полоски жизней
+     * @brief Метод для обновления полоски жизней
      * Отрисовывает полные сердчеки по количеству жизней
      */
     public void Refresh()

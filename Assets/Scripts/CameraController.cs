@@ -2,7 +2,7 @@
 using System.Collections;
 
 /**
- * Класс управления камерой
+ * @brief Класс управления камерой
  * Позволяет камере следить за игроком
  */
 public class CameraController : MonoBehaviour
@@ -14,7 +14,7 @@ public class CameraController : MonoBehaviour
     private Transform target;
 
     /**
-     * Метод, вызывающийся при загрузке объекта
+     * @brief Метод, вызывающийся при загрузке объекта
      * Подгружает необходимые компоненты
      */
     private void Awake()
@@ -23,7 +23,7 @@ public class CameraController : MonoBehaviour
     }
 
     /**
-     * Метод, вызывающийся каждый кадр
+     * @brief Метод, вызывающийся каждый кадр
      * Внутри перемещение игрока преобразуется в движение камеры
      */
     private void Update()

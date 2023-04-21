@@ -1,0 +1,144 @@
+\hypertarget{class_moveable_monster}{}\doxysection{Класс Moveable\+Monster}
+\label{class_moveable_monster}\index{MoveableMonster@{MoveableMonster}}
+
+
+Класс движущегося монстра  
+
+
+Граф наследования\+:Moveable\+Monster\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_moveable_monster}
+\end{center}
+\end{figure}
+\doxysubsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_moveable_monster_a78d1cfb2bdb8cce7b5975e5aec82669b}{Awake}} ()
+\begin{DoxyCompactList}\small\item\em Метод, вызывающийся при загрузке объекта Подгружает необходимые компоненты \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_moveable_monster_a3b3b46c219a9b67ed51d0ec52767b37a}{Start}} ()
+\begin{DoxyCompactList}\small\item\em Метод, вызывающийся после загрузки объекта Запоминает направление движения \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_moveable_monster_a8f3b1936b4af28c96e79a7cf5721f2d2}{Update}} ()
+\begin{DoxyCompactList}\small\item\em Метод, вызывающийся в каждом кадре Передвигает монстра \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_moveable_monster_a07aefb0242f24f5b0f2b4cd820b31522}{On\+Trigger\+Enter2D}} (Collider2D collider)
+\begin{DoxyCompactList}\small\item\em Метод вызывающийся при столкновении с другим коллайдером Проверяет столкновение с игроком Если игрок прыгнул сверху -\/\texorpdfstring{$>$}{>} монстр получает урон Если игрок столкнулся иначе -\/\texorpdfstring{$>$}{>} игрок получает урон \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_monster_af6ac6a4c01088e6b4abf79da772cecff}{On\+Trigger\+Enter2D}} (Collider2D collider)
+\begin{DoxyCompactList}\small\item\em Метод вызывающийся при столкновении с другим коллайдером Проверяет столкновение с другим объектом Если было столкновение с пулей -\/\texorpdfstring{$>$}{>} монстр получает урон Если было столкновение с игроком -\/\texorpdfstring{$>$}{>} игрок получает урон \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Защищенные члены унаследованные от \mbox{\hyperlink{class_unit}{Unit}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_unit_af3d22541d2829f0de065bf6aecee9957}{Die}} ()
+\begin{DoxyCompactList}\small\item\em Метод вызываемый при смерти объекта \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые члены}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_moveable_monster_a389b138a7d26dfe5b80546af1540fb1e}{Move}} ()
+\begin{DoxyCompactList}\small\item\em Метод для передвижения монстра Меняет направление движения если монстр дошел до стены \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_moveable_monster_ab3d06953ad52c1a055d56e0e14502a43}{speed}} = 2.\+0F
+\item 
+Vector3 \mbox{\hyperlink{class_moveable_monster_a79d121aeb84ef55d2e82d211afe425eb}{direction}}
+\item 
+Sprite\+Renderer \mbox{\hyperlink{class_moveable_monster_ad3db1c06d43c8021c487e5b6255c4252}{sprite}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Дополнительные унаследованные члены}
+\doxysubsubsection*{Открытые члены унаследованные от \mbox{\hyperlink{class_unit}{Unit}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_unit_a698a459fd5eeef7fc906f4657b723fa4}{Receive\+Damage}} ()
+\begin{DoxyCompactList}\small\item\em Базовый метод получения урона \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс движущегося монстра 
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{class_moveable_monster_a78d1cfb2bdb8cce7b5975e5aec82669b}\label{class_moveable_monster_a78d1cfb2bdb8cce7b5975e5aec82669b}} 
+\index{MoveableMonster@{MoveableMonster}!Awake@{Awake}}
+\index{Awake@{Awake}!MoveableMonster@{MoveableMonster}}
+\doxysubsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily void Moveable\+Monster.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Метод, вызывающийся при загрузке объекта Подгружает необходимые компоненты 
+
+\mbox{\Hypertarget{class_moveable_monster_a389b138a7d26dfe5b80546af1540fb1e}\label{class_moveable_monster_a389b138a7d26dfe5b80546af1540fb1e}} 
+\index{MoveableMonster@{MoveableMonster}!Move@{Move}}
+\index{Move@{Move}!MoveableMonster@{MoveableMonster}}
+\doxysubsubsection{\texorpdfstring{Move()}{Move()}}
+{\footnotesize\ttfamily void Moveable\+Monster.\+Move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Метод для передвижения монстра Меняет направление движения если монстр дошел до стены 
+
+\mbox{\Hypertarget{class_moveable_monster_a07aefb0242f24f5b0f2b4cd820b31522}\label{class_moveable_monster_a07aefb0242f24f5b0f2b4cd820b31522}} 
+\index{MoveableMonster@{MoveableMonster}!OnTriggerEnter2D@{OnTriggerEnter2D}}
+\index{OnTriggerEnter2D@{OnTriggerEnter2D}!MoveableMonster@{MoveableMonster}}
+\doxysubsubsection{\texorpdfstring{OnTriggerEnter2D()}{OnTriggerEnter2D()}}
+{\footnotesize\ttfamily override void Moveable\+Monster.\+On\+Trigger\+Enter2D (\begin{DoxyParamCaption}\item[{Collider2D}]{collider }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Метод вызывающийся при столкновении с другим коллайдером Проверяет столкновение с игроком Если игрок прыгнул сверху -\/\texorpdfstring{$>$}{>} монстр получает урон Если игрок столкнулся иначе -\/\texorpdfstring{$>$}{>} игрок получает урон 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em collider} & -\/ объект коллайдера, с которым произошло столкновение \\
+\hline
+\end{DoxyParams}
+
+
+Переопределяет метод предка \mbox{\hyperlink{class_monster_af6ac6a4c01088e6b4abf79da772cecff}{Monster}}.
+
+\mbox{\Hypertarget{class_moveable_monster_a3b3b46c219a9b67ed51d0ec52767b37a}\label{class_moveable_monster_a3b3b46c219a9b67ed51d0ec52767b37a}} 
+\index{MoveableMonster@{MoveableMonster}!Start@{Start}}
+\index{Start@{Start}!MoveableMonster@{MoveableMonster}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Moveable\+Monster.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Метод, вызывающийся после загрузки объекта Запоминает направление движения 
+
+\mbox{\Hypertarget{class_moveable_monster_a8f3b1936b4af28c96e79a7cf5721f2d2}\label{class_moveable_monster_a8f3b1936b4af28c96e79a7cf5721f2d2}} 
+\index{MoveableMonster@{MoveableMonster}!Update@{Update}}
+\index{Update@{Update}!MoveableMonster@{MoveableMonster}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Moveable\+Monster.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Метод, вызывающийся в каждом кадре Передвигает монстра 
+
+
+
+\doxysubsection{Данные класса}
+\mbox{\Hypertarget{class_moveable_monster_a79d121aeb84ef55d2e82d211afe425eb}\label{class_moveable_monster_a79d121aeb84ef55d2e82d211afe425eb}} 
+\index{MoveableMonster@{MoveableMonster}!direction@{direction}}
+\index{direction@{direction}!MoveableMonster@{MoveableMonster}}
+\doxysubsubsection{\texorpdfstring{direction}{direction}}
+{\footnotesize\ttfamily Vector3 Moveable\+Monster.\+direction\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_moveable_monster_ab3d06953ad52c1a055d56e0e14502a43}\label{class_moveable_monster_ab3d06953ad52c1a055d56e0e14502a43}} 
+\index{MoveableMonster@{MoveableMonster}!speed@{speed}}
+\index{speed@{speed}!MoveableMonster@{MoveableMonster}}
+\doxysubsubsection{\texorpdfstring{speed}{speed}}
+{\footnotesize\ttfamily float Moveable\+Monster.\+speed = 2.\+0F\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_moveable_monster_ad3db1c06d43c8021c487e5b6255c4252}\label{class_moveable_monster_ad3db1c06d43c8021c487e5b6255c4252}} 
+\index{MoveableMonster@{MoveableMonster}!sprite@{sprite}}
+\index{sprite@{sprite}!MoveableMonster@{MoveableMonster}}
+\doxysubsubsection{\texorpdfstring{sprite}{sprite}}
+{\footnotesize\ttfamily Sprite\+Renderer Moveable\+Monster.\+sprite\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+BY3/2\+DPlatformer/\+Assets/\+Scripts/\mbox{\hyperlink{_moveable_monster_8cs}{Moveable\+Monster.\+cs}}\end{DoxyCompactItemize}
